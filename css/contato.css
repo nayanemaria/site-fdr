@@ -1,0 +1,160 @@
+.container-principal::before,
+.container-principal::after {
+    width: 44px;
+    height: 786px;
+}
+
+.contato-h1 {
+    font-family: 'Barlow-Medium';
+    font-size: 36px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.formulario h1 {
+    font-family: 'Barlow-Medium';
+    font-size: 36px;
+    color: #014268;
+    text-align: center;
+    text-transform: uppercase;
+}
+.formulario p{
+    font-family: 'Barlow-Regular';
+    font-size: 21px;
+    color: #707070;
+    text-align: center;
+}
+
+.formulario form{
+    width: 517px;
+    margin: 0 auto;
+}
+/*css do formulario */
+.form__group {
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.form__group span{
+    list-style: none;
+}
+
+.form__field {
+    font-family: 'Barlow-Regular';
+    width: 100%;
+    border: 0;
+    border-radius: 4px;
+    outline: 0;
+    font-size: 1.0rem;
+    color: #707070;  
+    padding: 7px 7px;
+    background: transparent;
+    transition: border-color 0.2s;
+    border: 0.5px solid #707070;
+}
+.form__field::placeholder {
+    color: transparent;
+}
+.form__field:placeholder-shown ~ .form__label {
+    font-size: 20px;
+    cursor: text;
+    top: 20px;
+    font-family: 'Barlow-Regular';
+}
+
+.form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 20px;
+    color: #707070;
+    background-color: white;
+    margin-left: 8px;
+    font-family: 'Barlow-Regular';
+}
+
+.form__field:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 0.5px;
+    border: 0.5px solid #014268;
+    border-image-slice: 1;
+    border-radius: 4px;
+}
+.form__field:focus ~ .form__label{
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 20px;
+    color: #014268;
+    font-weight: 700;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 0px;
+    font-family: 'Barlow-Regular';
+}
+.form__field:focus ~ .form__label span{
+    color: #57D5DB;
+}
+
+/* reset input */
+.form__field:required, .form__field:invalid {
+    box-shadow: none;
+}
+
+textarea{
+    height: 150px;
+}
+button{
+    font-family: 'Barlow-Medium';
+    border: none;
+    border-radius: 6px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+.button-fdr{
+    background-color: #00828A;
+    color: #fff;
+    width: 260px;
+    height: 60px;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.4s ease 0s;
+}
+.button-fdr:hover {
+    width: 270px;
+    letter-spacing: 0px;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 131, 138, 0.66);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0, 131, 138, 0.66);
+    box-shadow: 5px 40px -10px rgba(0, 131, 138, 0.66);
+}
+
+/*MENU DESKTOP*/
+@media only screen and (min-width: 1190px) {
+    .formulario iframe{
+        width: 600px;
+        height: 420px;
+    }
+}
+
+
+@media only screen and (max-width: 1189px) {
+    .contato-h1 {
+        font-size: 16px;
+        font-family: 'Barlow-Bold';
+    }
+    .parceiros li{
+        margin-bottom: 40px;
+    }
+    .formulario iframe{
+        width: 100%;
+        height: 250px;
+    }
+}

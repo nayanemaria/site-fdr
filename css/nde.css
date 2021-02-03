@@ -1,0 +1,175 @@
+.nde-h1 {
+  font-family: 'Barlow-Medium';
+  font-size: 36px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/*conteudo nde*/
+
+p{
+  font-family: 'Barlow-Regular';
+  font-size: 21px;
+  color: #707070;
+}
+
+.nde h1, .equipe h1{
+  font-family: 'Barlow-Bold';
+  font-size: 36px;
+  color: #014268;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.nde li{
+  list-style: none;
+}
+
+.historia img{
+  width: 635px;
+  height: 415px;
+}
+
+li.imagem img {
+  width: 381px;
+  height: 513px;
+}
+
+
+/*equipe*/
+.equipe ul{
+  padding: 0 65px;
+}
+
+.equipe li{
+  list-style: none;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+  flex-basis: 150px;
+}
+
+.equipe img{
+  width: 100px;
+  height: 114px;
+}
+
+.autores p{
+  margin-bottom: 2px;
+  font-family: "Barlow-Bold";
+  font-size: 18px;
+  text-align: center;
+  margin: 0 auto;
+  color: #01718E;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.autores span{
+  font-family: "Barlow-Regular";
+  font-size: 16px;
+  align-items: center;
+  color: #707070;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin: 0 auto;
+  text-align: center;
+}
+.autores{
+  display: grid;
+  position: absolute;
+  padding-top: 185px;
+}
+
+/*MENU DESKTOP*/
+@media only screen and (min-width: 1190px) {	
+	.cards-timeline{
+		height: 410px;
+		width: 550px;
+	}
+}
+
+
+@media only screen and (max-width: 1189px) {
+	.nde-h1 {
+		font-size: 16px;
+		font-family: 'Barlow-Bold';
+	}
+	.parceiros li{
+		margin-bottom: 40px;
+	}
+
+	.historia img {
+		width: 320px;
+		height: 210px;
+	}
+
+	li.imagem{
+		position:relative;
+		max-width: 287px;
+	}
+
+	li.imagem img{
+		height: 260px;
+		width: 287px;
+	}
+
+	div.imagem-mascara{
+		max-width: 191px;
+		max-height: 258px;
+		position:absolute;
+		top:0px;
+		left:0;
+	}
+	div.imagem-mascara img{
+		height: 258px;
+		width: 191px;
+	}
+
+	.democrito img {
+		width: 172px;
+		height: 217px;
+	}
+
+	.equipe ul{
+		padding: 0 0px;
+	}
+
+	.equipe img{
+		width: 90px;
+		height: auto;
+	}
+
+	.autores p{
+		margin-bottom: 2px;
+		font-family: "Barlow-Bold";
+		font-size: 20px;
+		align-items: center;
+		color: #01718E;
+	}
+	.autores span{
+		font-family: "Barlow-Regular";
+		font-size: 17px;
+		align-items: center;
+		color: #707070;
+	}
+	.autores{
+		display: block;
+		position: absolute;
+		padding-top: 175px;
+	}
+	p, .anosfdr p, .autores p{
+		font-size: 18px;
+	}
+
+	h1{
+		font-size: 26px;
+	}
+
+}
